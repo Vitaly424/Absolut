@@ -1,0 +1,31 @@
+.request{
+    padding-top: 220px;
+}
+
+.request__content{
+    margin-top: 50px;
+ 
+    background: url('../../assets/img/request/Rectangle\ 6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.request__container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1024px){
+    .request__container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .request{
+        padding-top: 30px;
+    }
+}
+
+

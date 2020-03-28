@@ -1,0 +1,167 @@
+.working{
+    padding-top: 160px;
+}
+
+.working__bg{
+    max-width: 1081px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 978px;
+
+    background: url("../../assets/img/working/bg.png");
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+.working__item{
+    max-width: 262px;
+}
+
+.working__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background: $white;
+    border: 4px solid $gallery;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    color: $orange;
+
+    transition: border-color .2s linear, color .2s linear;
+    &:hover{
+        border-color: #ff9f00;
+        color: $black;
+    }
+}
+
+.working__desk{
+    margin-top: 13px;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: $codGray;
+}
+
+.working__item{
+    position: absolute;
+}
+
+
+.working__img{
+    position: absolute;
+}
+
+.working__img--1{
+    bottom: 110px;
+    left: 330px;
+}
+
+.working__img--2{
+    bottom: 296px;
+    left: 439px;
+}
+
+.working__img--3{
+    top: 289px;
+    left: 331px;
+}
+
+.working__item--1{
+    bottom: -30px;
+    left: 80px;
+}
+
+
+.working__item--2{
+    right: 180px;
+    bottom: 90px;
+}
+
+.working__item--3{
+    left: 220px;
+    bottom: 250px;
+}
+
+.working__item--4{
+    top: 280px;
+    right: 290px;
+}
+
+.working__item--5{
+    top: 180px;
+    left: 150px;
+}
+
+.working__item--6{
+    right: 0;
+    top: 100px;
+}
+
+
+ 
+@media (max-width: 1091px){
+    .working__bg{
+        background: none;
+        
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .working__img{
+        display: none;
+    }
+    .working__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin-top: 40px;
+    }
+    .working__item{
+        display: block;
+        margin-bottom: 30px;
+
+        position: static;
+    }
+}
+
+@media (max-width: 1024px){
+    .working{
+        padding-top: 30px;
+    }    
+}
+
+@media (max-width: 853px){
+    .working__item{
+        flex-basis: 45%;
+    }
+    .working__desk{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 619px){
+    .working__content{
+        align-content: center;
+        justify-content: center;
+    }
+    .working__item{
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,155 @@
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__flex{
+    display: flex;
+}
+
+.header__info{
+    margin-right: 100px;
+}
+
+
+.header__info-phone a{
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+
+    color: $orange;
+
+    transition: color .2s linear;
+
+    img{
+        margin-right: 2px;
+    }
+
+    &:hover{
+        color: darken($orange, 15%);
+    }
+    
+}
+
+.header__mail a{
+    display: flex;
+    align-items: center;
+     
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    color: $orange;
+
+    transition: color .2s linear;
+
+    img{
+        margin-right: 30px;
+    }
+
+    &:hover{
+        color: darken($orange, 15%);
+    }
+}
+
+.header__info-work{
+    margin-top: 5px;
+
+    color: $gray;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    padding-left: 25px;
+}
+
+ 
+@media (max-width: 1230px){
+    .header__info{
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1158px){
+    .header__logo{
+        img{
+            width: 300px;
+        }
+    }
+}
+
+ 
+@media (max-width: 994px){
+    .header__logo{
+        img{
+            width: 200px;
+        }
+    }
+    .header__info-phone a{
+        font-size: 19px;
+        img{
+            width: 21px;
+        }
+    }
+    .header__info-work{
+        font-size: 16px;
+    }
+
+    .header__mail a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 753px){
+    .header__logo{
+        img{
+            width: 400px;
+        }
+    }
+    .header__inner{
+        flex-direction: column;
+    }
+    .header__mail a{
+        font-size: 24px;
+
+        img{
+            margin-right: 5px;
+        }
+
+        transition: transform .2s linear;
+        &:hover{
+            transform: translateX(0);
+        }
+    }
+    .header__info{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .header__info-phone a{
+        font-size: 24px;
+    }
+    .header__info-work{
+        margin-top: 10px;
+    }
+    .header__flex{
+        flex-direction: column;
+    }
+    .header__info{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 548px){
+    .header__logo{
+        img{
+            width: 305px;
+        }
+    }
+}

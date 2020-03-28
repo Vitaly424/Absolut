@@ -1,0 +1,79 @@
+//utilities
+@import "utilities/fonts";
+@import "utilities/mixins";
+@import "utilities/normalize";
+@import "utilities/variables";
+
+html{
+    height: 100%;
+}
+
+/* Default styles */
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container{
+    @include min-max(320px, 1380px, 15px);
+}
+
+
+.none{
+    display: none;
+}
+
+ 
+/* Bootstrap */
+// @import "../../../node_modules/bootstrap/scss/functions";
+// @import "../../../node_modules/bootstrap/scss/variables";
+// @import "../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../node_modules/bootstrap/scss/grid";
+
+// slick-slider
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+ 
+
+/* Blocks */
+@import "./blocks/header";
+@import "./blocks/intro";
+@import "./blocks/global";
+@import "./blocks/serviceses";
+@import "./blocks/advantages";
+@import "./blocks/working";
+@import "./blocks/request";
+@import "./blocks/form";
+@import "./blocks/customers";
+@import "./blocks/footer";
+@import "./blocks/modal";

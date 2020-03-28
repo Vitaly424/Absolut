@@ -1,0 +1,25 @@
+.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    color: $codGray;
+}
+
+.title__img-left{
+    margin-right: 5px;
+}
+
+.title__img-right{
+    margin-left: 5px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+@media (max-width: 499px){
+    .title{
+        font-size: 21px;
+    }
+}

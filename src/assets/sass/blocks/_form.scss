@@ -1,0 +1,161 @@
+.form{
+    padding: 50px 80px;
+    max-width: 623px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.form__title{
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: $codGray;
+}
+
+.form__input{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: 1px solid #3E3E3E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 18px;
+ 
+    color: $mineShaft;
+
+    transition: box-shadow .2s linear;
+    &:focus{
+        outline: none;
+
+        box-shadow: 0 0 10px -2px #000;
+    }
+
+    &::placeholder{
+        font-weight: 400;
+        font-size: 18px;
+     
+        color: $mineShaft;
+    }
+
+}
+
+.form__btn{
+    width: 100%;
+    min-height: 79px;
+    margin-top: 33px;
+
+    overflow: hidden;
+
+    background: linear-gradient(99.85deg, #FF9F00 22.4%, #FFD186 100%);
+    border-radius: 0px 20px;
+    cursor: pointer;
+    border: none;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+
+    position: relative;
+ 
+    &::before{
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width:30px;
+        height: 100%;
+
+        background-color: rgba(white, .6);
+
+        transform: translateX(-80px) skewX(-30deg);
+
+        transition: transform .2s linear;
+    }
+
+
+    &:hover{
+        &::before{
+           animation:  move-light 3s;
+        }
+    }
+}
+
+@keyframes move-light{
+
+    from {
+        transform: translateX(-80px) skewX(-30deg);
+    }
+    to{
+        transform: translateX(500px) skewX(-30deg);
+    }
+
+}
+
+
+.form__checkbox{
+    position: relative;
+}
+
+.form__input-checkbox{
+    appearance: none;
+    position: absolute;
+}
+
+.form__input-checkbox-label{
+    padding-left: 40px;
+
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color:$codGray;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0;
+        z-index: 1;
+
+        display: block;
+        width: 26px;
+        height: 26px;
+
+        border: 1px solid #3E3E3E;
+        border-radius: 3px;
+
+        transition: background-color .2s linear;
+    }
+}
+
+.form__input-checkbox:checked + .form__input-checkbox-label::before{
+    background-color: rgb(9, 255, 9);
+}
+
+ 
+@media (max-width: 648px){
+    .form{
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 530px){
+    .form__title{
+        font-size: 18px;
+    }
+    .form__btn{
+       min-height: 58px;
+    }
+    .form{
+        padding: 30px 20px;
+    }
+}
